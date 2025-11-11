@@ -4,51 +4,67 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
-    h1 {
-        text-align: center;
-    }
-    .inputs {
-      width: 100%;
-        
-        input {
-            width: 100%;
-            font-size: 1rem;
-            padding: 1rem;
-            background-color: #fffe;
-            color: #000;
-            outline: none;
-           border: none;
-           border-radius: 0.30rem;
-           margin-top: 0.6rem;
-        }
-    }
+h1 {
+    text-align: center;
+}
 
-    .show {
-        display: flex;
-        align-items: flex-end;
-        gap: 0.3rem;
+.inputs {
+    width: 100%;
+}
 
-        input {
-            width: 1rem; height: 1rem;
-            &:checked {
-                accent-color: #133a95;
-            }
-        }
-    }
+.inputs input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 0.6rem;
+}
 
-    button {
-        font-size: 1.25rem;
-        padding: 0.9rem 0;
-    }
+.show {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.3rem;
+}
 
-    .recovery {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+.show input {
+    width: 1rem;
+    height: 1rem;
+    accent-color: #133a95;
+}
 
-    small {
-        font-size: 1rem;
-    }
+button {
+    font-size: 1.25rem;
+    padding: 0.9rem 0;
+    background-color: #133a95;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: #0f2d72;
+}
+
+.recovery {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+small {
+    font-size: 1rem;
+    cursor: pointer;
 }
