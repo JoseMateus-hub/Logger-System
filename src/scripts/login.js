@@ -8,7 +8,7 @@ checkbox.addEventListener("change", () => {
   password.type = checkbox.checked ? "text" : "password";
 });
 
-// Validação simples do login
+
 button.addEventListener("click", (event) => {
   event.preventDefault();
 
@@ -20,10 +20,16 @@ button.addEventListener("click", (event) => {
     return;
   }
 
-  if (usernameValue !== "mateus" || passwordValue !== "123") {
-    alert("Incorrect username or password");
+  const usernameSession = sessionStorage.getItem('username')
+  const passwordSession = sessionStorage.getItem('password')
+
+  if(usernameValue !== usernameSession || passwordValue !== passwordValue){
+    alert("Incorrect username or password")
     return;
   }
 
+  window.location.href = './home.html'
+
   alert("Access granted!");
+
 });

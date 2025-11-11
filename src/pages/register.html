@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/form.css" />
+    <title>Logger System - Register</title>
+</head>
+
+<body>
+    <form>
+        <h1>register</h1>
+
+        <main class="inputs">
+            <input type="text" 
+            id="name-register" 
+            placeholder="Nome" 
+            required 
+            />
+            <input type="text" 
+            id="username-register" 
+            placeholder="Usuário" 
+            required 
+            />
+            <input type="password" 
+            id="password-register" 
+            placeholder="Senha" 
+            required 
+            />
+        </main>
+
+        <main class="show" id="show">
+            <input type="checkbox" id="showPassword">
+            <label for="showPassword">Mostrar Senha</label>
+        </main>
+
+
+        <main class="recovery">
+        <button type="button" id="button-register">register</button>
+            <small>Forgot your password? Recover it <a href="./login.html">here</a></small>
+        </main>
+    </form>
+    <script src="../scripts/register.js"></script>
+</body>
+
+</html>
